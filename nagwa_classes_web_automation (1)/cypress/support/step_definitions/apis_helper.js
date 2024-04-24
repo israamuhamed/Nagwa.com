@@ -3,12 +3,12 @@ export { delete_user  }
 function get_accesss_token() {
     return cy.request({
         method: 'POST',
-        url: 'https://auth-nagwa.auth.us-east-1.amazoncognito.com/oauth2/token?grant_type=client_credentials&scope=apiauthidentifier/json.read&client_id=7saath128c9eifqvl722qc8e9g',
+        url: '',
         form: true,
         headers: {
-            'content-type': 'application/x-www-form-urlencoded',
-            'Authorization': 'Basic N3NhYXRoMTI4YzllaWZxdmw3MjJxYzhlOWc6MTZqaXRvanRjcWRoYTJlazZqZzRmOHRtN3MybmMyamQ0ODIyMGJpcm1kOWFucGFiaDJ2ag==',
-            'Cookie':'XSRF-TOKEN=79215306-fd68-42ca-89d1-f54e98ebe634'
+            'content-type': '',
+            'Authorization': '',
+            'Cookie':''
         }
     })
 }
