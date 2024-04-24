@@ -11,10 +11,10 @@ async setupNodeEvents(on, config) {
     on("task", {
         async connectDB(query){
         const client = new Client({
-        host: 'live-nagwa-otp.cluster-cmmuo3lde4yu.us-east-1.rds.amazonaws.com',
+        host: '',
         user: 'testing_team',
-        password: 'Sp5YkYwH576tjYEcLV4PP7',
-        database: 'live-mmOtpDataBase',
+        password: '',
+        database: '',
         port: 5432
           })
           await client.connect()
@@ -37,8 +37,8 @@ specPattern: "cypress/e2e/features/*.feature",
 baseUrl: "https://www.nagwa.com",
 env: {
     language: 'en',
-    baseURL: 'https://api-users.nagwa.com/',
-    new_user_email: 'tester_new_automation@nagwa.com'
+    baseURL: '',
+    new_user_email: ''
 }
 }, 
 });
